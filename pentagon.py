@@ -24,8 +24,7 @@ def main():
         length_as_int = int(length_as_string)
         # Call function
         final_perimeter = perimeter_calculation(length_as_int)
-        length = perimeter_calculation(length_as_int)
-        if length == -1:
+        if final_perimeter == -1:
             print("\nPlease input a positive number.")
         else:
             print(
