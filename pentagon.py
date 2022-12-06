@@ -28,7 +28,7 @@ def main():
             print("\nPlease input a positive number.")
         else:
             print(
-                "\nThe perimeter of a pentagon with the side lengths of {0}cm is {1}cm.".format(
+                "\nThe perimeter of a pentagon with the side lengths of {0} cm is {1} cm.".format(
                     length_as_int, final_perimeter
                 )
             )
