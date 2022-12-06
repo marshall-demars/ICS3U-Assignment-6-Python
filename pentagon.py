@@ -7,8 +7,10 @@
 
 def perimeter_calculation(length):
     # This function calculates the perimeter of a pentagon
-
-    perimeter = length * 5
+    if length < 0:
+        return -1
+    else:
+        perimeter = length * 5
 
     return perimeter
 
@@ -22,11 +24,15 @@ def main():
         length_as_int = int(length_as_string)
         # Call function
         final_perimeter = perimeter_calculation(length_as_int)
-        print(
-            "\nThe perimeter of a hexagon with the side lengths of {0} cm is {1} cm.".format(
-                length_as_int, final_perimeter
+        length = perimeter_calculation(length_as_int)
+        if length == -1:
+            print("\nPlease input a positive number.")
+        else:
+            print(
+                "\nThe perimeter of a hexagon with the side lengths of {0} cm is {1} cm.".format(
+                    length_as_int, final_perimeter
+                )
             )
-        )
     except Exception:
         print("\nInvalid Input.")
 
